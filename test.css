@@ -1,0 +1,31 @@
+body {
+	background: blue;
+ 	background: -moz-radial-gradient(white 40%, blue 100%);
+ 	background: -webkit-gradient(radial, left top, left bottom, color-stop(40%, white), color-stop(100%, blue));
+ 	background: -webkit-radial-gradient(white 40%, blue 100%);
+ 	background: radial-gradient(white 40%, blue 100%);
+ 	overflow: auto;
+ 	background-size: cover;
+}
+
+
+
+.span4 {
+	color: black;
+ 	font-weight: bold;
+ }
+
+
+#Title {
+	font-size: 50px;
+	width: 100%;
+	height: 90px;
+	font-weight: bold;
+	top: 0px;
+}
+
+.textbox {
+	width: 100%;
+	background-color: white;
+	height: 100px;
+}
