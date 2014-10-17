@@ -7,16 +7,32 @@
 
  	<link href="test.css" rel="stylesheet" >
     <link  href="bootstrap.min.css" rel="stylesheet" >
-    
+    <script src="ajax.js"></script>
 
 
 
 
 
 <script>
-function Emily()
+function Emily(infoId)
 {
-
+	var xmlHttp = xmlHttpObjCreate();
+		if (!xmlHttp) {
+			alert("The browser doesn't support this action.");
+			return;
+		}
+		
+		xmlHttp.onreadystatechange=function() {
+			if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+				elemObj = document.getElementById('textbox');
+				elemObj.innerHTML = xmlHttp.responseText;
+			  }
+		}
+		
+		// Append GET data to identify which quote we want
+		var reqURL = "updateInfo.php?infoId=" + infoId;
+		xmlHttp.open("GET", reqURL, true);
+		xmlHttp.send();
 }
 </script>
 
@@ -35,11 +51,14 @@ function Emily()
             <!--<h2><a href='Index.php'><span>The Lost Solstice</span></a></h2>	-->
 		</div><!--Title-->
 
-<div class="textbox">
-lolololol
+<div id="textbox">
+TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST
 </div>
 
-
+<input type="button" value="Quote 1" onclick="Emily('quote1');">
+<input type="button" value="Quote 2" onclick="Emily('quote2');">
+<input type="button" value="Quote 3" onclick="Emily('quote3');">
+<input type="button" value="Quote 4" onclick="Emily('quote4');">
 	
 
 

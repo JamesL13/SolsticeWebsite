@@ -1,11 +1,12 @@
 body {
-	background: blue;
+	background: #000000;
  	background: -moz-radial-gradient(white 40%, blue 100%);
  	background: -webkit-gradient(radial, left top, left bottom, color-stop(40%, white), color-stop(100%, blue));
  	background: -webkit-radial-gradient(white 40%, blue 100%);
  	background: radial-gradient(white 40%, blue 100%);
  	overflow: auto;
  	background-size: cover;
+
 }
 
 
@@ -24,8 +25,14 @@ body {
 	top: 0px;
 }
 
-.textbox {
+#textbox {
 	width: 100%;
-	background-color: white;
-	height: 100px;
+	background-color: transparent;
+	height: 200px;
+	box-shadow: 0px 0px 10px 10px purple; 
+	color: #0000FF;
+	font-weight: bold;
+	font-size: 20px; 
+	overflow: auto;
+	padding: 10;
 }
