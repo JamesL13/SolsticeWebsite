@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- 	<link href="test.css" rel="stylesheet" >
     <link  href="bootstrap.min.css" rel="stylesheet" >
+    <link href="test.css" rel="stylesheet" >
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap.min.js"></script>
     <script src="ajax.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Exo+2:400,800' rel='stylesheet' type='text/css'>
 
@@ -45,7 +48,6 @@ function Emily(infoId)
         <div class="col-md-12">
         <div id="Title">
             The Lost Solstice
-            <!--<h2><a href='Index.php'><span>The Lost Solstice</span></a></h2>	-->
 		</div><!--Title-->
   </div><!--col-md-12-->
   
@@ -64,7 +66,7 @@ function Emily(infoId)
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -74,44 +76,16 @@ function Emily(infoId)
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
+    <div class="collapse navbar-collapse" id=".navbar-collapse">
       <ul class="nav navbar-nav navbar-center">
-<!--        <li><a href='#' value="Quote 1" onclick="Emily('quote1')">Home</a></li>-->
         <li><a href="#" value="Quote 2" onclick="Emily('quote2');">Cube Field</a></li>
-<!--        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>-->
- <!--     <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-     -->
+
+
+
      <li><a href="#" value="Quote 3" onclick="Emily('quote3')">Need a Website?</a></li> 
-<!--    <li><a href="#" value="Quote 4" onclick="Emily('quote4');">Contact Me</a></li>--> </ul>
+ </ul>
     <ul class="nav navbar-nav navbar-right">
   <li><a href="#" value="Quote 4" onclick="Emily('quote4')">Contact Me</a></li> </ul>
- <!--       <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>-->
 		  </ul>
     </div> <!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -127,17 +101,15 @@ function Emily(infoId)
 
 
 
-
+<hr width="100%">
 
 <div id="textbox">
 This website was created and designed by James Landy. It includes the accomplishments of Mizzou students James Landy and Jack Boening.
 </div><!--TEXTBOX-->
-<!--
-<input type="button" value="Quote 1" onclick="Emily('quote1')">
-<input type="button" value="Quote 2" onclick="Emily('quote2');">
-<input type="button" value="Quote 3" onclick="Emily('quote3');">
-<input type="button" value="Quote 4" onclick="Emily('quote4');">
--->	
+
+</hr><!--Top Line-->
+<hr  width="100%">
+</hr><!--Bottom Line -->
 
 
 <div class="row">

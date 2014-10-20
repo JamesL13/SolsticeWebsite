@@ -42,6 +42,7 @@ body {
   /*font-family: 'Exo2', sans-serif;
 */
   font: 25px/1.7 "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+
 	-webkit-animation: bounceInUp 1500ms ease-out;
 	-moz-animation: bounceInUp 1500ms ease-out;
 	-o-animation: bounceInUp 1500ms ease-out;
@@ -49,8 +50,22 @@ body {
 
 }
 
+hr {
+  background-color: blue;
+  border: 3px;
+  border-top: 3px solid #eee;
 
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite;
+}
 
+ul.nav a:hover {
+ color: #0099CC !important; 
+}
+
+ul.nav a:hover {
+ color: #0099CC !important; 
+}
 
 
 @-webkit-keyframes bounceInUp {
@@ -128,20 +143,12 @@ body {
 }
 
 
-
-
-
-@-webkit-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {border-color: #0099CC;}
 }
 
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
+/* Standard syntax */
+@keyframes mymove {
+    50% {border-color: #CCCCCC;}
 }
