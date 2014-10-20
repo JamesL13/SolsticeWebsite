@@ -3,7 +3,7 @@ $infoId = empty($_GET['infoId']) ? 'quote1' : $_GET['infoId'];
 
 switch($infoId) {
 	case 'quote1':
-		$info = 'This website was created and designed by James Landy. It includes the accomplishments of Mizzou students James Landy and Jack Boening.</i>.';
+		$info = 'This website was created and designed by Mizzou Student James Landy. Its purpose is to show off projects I have completed.';
 		break;
 	case 'quote2':
 		$info = 'If you have an android device, you should download Cube Field! It is a easy to learn game about finding the blue sphere in a field of blue cubes within the time limit.';

@@ -1,10 +1,6 @@
 body {
 	background: #000000;
-	/*background: -moz-radial-gradient(white 40%, blue 100%);
- 	background: -webkit-gradient(radial, left top, left bottom, color-stop(40%, white), color-stop(100%, blue));
- 	background: -webkit-radial-gradient(white 40%, blue 100%);
- 	background: radial-gradient(white 40%, blue 100%);
- 	*/overflow: auto;
+	overflow: hidden;
  	background-size: cover;
   background: -moz-radial-gradient(black 40%, black 100%);
   background: -webkit-gradient(radial, left top, left bottom, color-stop(40%, black), color-stop(100%, black));
@@ -32,15 +28,13 @@ body {
 #textbox {
 	width: 100%;
 	background-color: transparent;
-	height: 200px;
-/*	box-shadow: 0px 0px 10px 10px purple; 
-*/	color: #FFFF00;
+	min-height: 200px;
+  height: 90%;
+	color: #FFFF00;
 	font-weight: bold;
 	font-size: 22px; 
 	overflow: auto;
 	padding: 10;
-  /*font-family: 'Exo2', sans-serif;
-*/
   font: 25px/1.7 "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
 
 	-webkit-animation: bounceInUp 1500ms ease-out;
@@ -52,21 +46,20 @@ body {
 
 hr {
   background-color: blue;
-  border: 3px;
-  border-top: 3px solid #eee;
+  border: 5px;
+  border-top: 5px solid #eee;
 
   -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
   animation: mymove 5s infinite;
 }
 
 ul.nav a:hover {
- color: #0099CC !important; 
+ color: #0000FF !important; 
 }
 
-ul.nav a:hover {
- color: #0099CC !important; 
+a:hover {
+  color: #0000FF !important;
 }
-
 
 @-webkit-keyframes bounceInUp {
   0%, 60%, 75%, 90%, 100% {
@@ -145,10 +138,10 @@ ul.nav a:hover {
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
-    50% {border-color: #0099CC;}
+    50% {border-color: #0000FF;}
 }
 
 /* Standard syntax */
 @keyframes mymove {
-    50% {border-color: #CCCCCC;}
+    50% {border-color: #0000FF;}
 }
