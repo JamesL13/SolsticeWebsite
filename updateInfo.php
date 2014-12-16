@@ -6,10 +6,10 @@ switch($infoId) {
 		$info = 'This website was created and designed by Mizzou Student James Landy. Its purpose is to show off projects I have completed.';
 		break;
 	case 'skills':
-		$info = 'My skills include coding in C, Java, HTML5/CSS3, PHP, MYSQL, Postgres, along with being able to learn new languages quickly. I have a strong drive to always be improving my skills and taking on new challenges.';
+		$info = 'My skills include coding in C, Java, HTML5/CSS3, PHP, MYSQL, Postgres, Javascript, Ajax, along with being able to learn new languages quickly. I have a strong drive to always be improving my skills and taking on new challenges.';
 		break;
 	case 'cubefield':
-		$info = 'If you have an android device, you should download Cube Field! It is a easy to learn game about finding the blue sphere in a field of blue cubes within the time limit.';
+		$info = 'Cube Field is a game I built in Unity using 100% Unityscript. It was orignally built for Hack Illinois but was completed for a final project for a web class. It was released for the Google Play Store in May of 2014. Since then it has 700+ downloads and about a 4 star rating.';
 		break;
 	case 'allaboutme':
 		$info = 'All About Me is a Webapp I created with 2 friends for Hack Mizzou. It is a social media conglomerate that took your Facebook and Twitter feeds and combined them into one for easy viewing. The Facebook and Twitter APIs were used to accomplish this while we coded in mostly in PHP and used bootstrap to build the website.';
