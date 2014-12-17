@@ -1,4 +1,5 @@
 ﻿body {
+  padding-top: 70px;
   background: #000000;
   overflow: hidden;
   background-size: cover;
@@ -28,7 +29,7 @@
 #textbox {
   width: 100%;
   background-color: transparent;
-  min-height: 200px;
+  min-height: 150px;
   height: 90%;
   color: #FFFF00;
   font-weight: bold;
@@ -128,6 +129,7 @@ a:hover {
             transform: translate3d(0, 0, 0);
   }
 }
+
 
 
 .bounceInUp {
