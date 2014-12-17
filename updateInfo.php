@@ -1,8 +1,8 @@
 <?php
-$infoId = empty($_GET['infoId']) ? 'quote1' : $_GET['infoId'];
+$infoId = empty($_GET['infoId']) ? 'solstice' : $_GET['infoId'];
 
 switch($infoId) {
-	case 'quote1':
+	case 'solstice':
 		$info = 'This website was created and designed by Mizzou Student James Landy. Its purpose is to show off projects I have completed.';
 		break;
 	case 'skills':
@@ -12,7 +12,7 @@ switch($infoId) {
 		$info = 'Cube Field is a game I built in Unity using 100% Unityscript. It was orignally built for Hack Illinois but was completed for a final project for a web class. It was released for the Google Play Store in May of 2014. Since then it has 700+ downloads and about a 4 star rating.';
 		break;
 	case 'allaboutme':
-		$info = 'All About Me is a Webapp I created with 2 friends for Hack Mizzou. It is a social media conglomerate that took your Facebook and Twitter feeds and combined them into one for easy viewing. The Facebook and Twitter APIs were used to accomplish this while we coded in mostly in PHP and used bootstrap to build the website.';
+		$info = 'All About Me is a Webapp I created with 2 friends for Hack Mizzou. It is a social media conglomerate that took your Facebook and Twitter feeds and combined them into one for easy viewing. The Facebook and Twitter APIs were used to accomplish this while we coded in mostly in PHP and used bootstrap to build the website. It is functional but not released due to time constraints and other projects.';
 		break;
 	case 'pizza':
 		$info = 'For a group project in a database class we built an online ordering system. We used Postgres to build the databse, PHP to make the database calls, and a bootstrap theme to build the website.';
