@@ -1,8 +1,9 @@
-﻿body {
-  padding-top: 70px;
-  background: #000000;
+﻿html,body {
+  width: 100%;
+  height: 100%;
+  min-width: 600px;
+  background: transparent;
   overflow: hidden;
-  background-size: cover;
   background: -moz-radial-gradient(black 40%, black 100%);
   background: -webkit-gradient(radial, left top, left bottom, color-stop(40%, black), color-stop(100%, black));
   background: -webkit-radial-gradient(black 40%, black 100%);
@@ -15,7 +16,55 @@
   font-weight: bold;
  }
 
+#middle {
+  position: absolute;
+  color: blue;
+  /*background: #0404B4;*/
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  bottom: 50%;
+}
 
+#links {
+  position: absolute;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}
+
+li {
+  height: 100%;
+  width: 33%;
+  text-align: center;
+  float: left;
+  display: inline;
+}
+
+a {
+  transition: color 2s ease;
+  color: blue;
+}
+
+a:hover {
+  transition: color 2s ease;
+  color: white;
+}
+
+/* remove canvas default margin */
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+#particles-js{
+  width:100%;
+  height:100%;
+}
+
+/*
 #Title {
   font-size: 36px;
   width: 100%;
@@ -50,8 +99,8 @@ hr {
   border: 5px;
   border-top: 5px solid #eee;
 
-  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-  animation: mymove 5s infinite;
+  -webkit-animation: mymove 5s infinite;*/ /* Chrome, Safari, Opera */
+/*  animation: mymove 5s infinite;
 }
 
 ul.nav a:hover {
@@ -137,13 +186,15 @@ a:hover {
           animation-name: bounceInUp;
 }
 
-
+*/
 /* Chrome, Safari, Opera */
+/*
 @-webkit-keyframes mymove {
     50% {border-color: #0000FF;}
 }
-
+*/
 /* Standard syntax */
+/*
 @keyframes mymove {
     50% {border-color: #0000FF;}
-}
+}*/
