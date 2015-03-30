@@ -3,11 +3,13 @@
   height: 100%;
   min-width: 600px;
   background: transparent;
-  overflow: hidden;
+  overflow: auto;
   background: -moz-radial-gradient(black 40%, black 100%);
   background: -webkit-gradient(radial, left top, left bottom, color-stop(40%, black), color-stop(100%, black));
   background: -webkit-radial-gradient(black 40%, black 100%);
   background: radial-gradient(black 40%, black 100%);
+
+  font-family: 'Trade Winds', cursive;
 }
 
 
@@ -18,7 +20,7 @@
 
 #middle {
   position: absolute;
-  color: blue;
+  color: #00FFFF;
   /*background: #0404B4;*/
   font-size: 50px;
   font-weight: bold;
@@ -53,6 +55,7 @@ a:hover {
   color: white;
 }
 
+/*START OF PARTICLES*?
 /* remove canvas default margin */
 canvas{
   display:block;
@@ -64,137 +67,232 @@ canvas{
   height:100%;
 }
 
-/*
-#Title {
-  font-size: 36px;
+/*END OF PARTICLES*/
+
+.box {
+  position: absolute;
+  top: 0;
   width: 100%;
-  height: 90px;
-  font-weight: bold;
-  top: 0px;
-  font-family: 'Exo2', sans-serif;
-  color: #00FFFF;
+  /*background-color: white;*/
+  height: 100px;
+/*  opacity: .4;
+  filter: alpha(opacity=40); For IE8 and earlier */
+  color: #0040FF;
+  text-align: center;
+  padding: 0 auto;
+/*  transition: background-color 2s ease;
+  background: transparent;
+*/}
+
+.lowerBox {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /*background-color: white;*/
+  height: 100px;
+/*  opacity: .4;
+  filter: alpha(opacity=40); For IE8 and earlier */
+  color: #0040FF;
+  text-align: center;
+/*  transition: background-color 2s ease;
+  background: transparent;
+*/}
+
+.text {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  height: 100%;
 }
 
-#textbox {
-  width: 100%;
+
+#first {
+  font-size: 35px;
+  width: 24.5%;
+  min-width: 149px;
+  height: 100px;
   background-color: transparent;
-  min-height: 150px;
-  height: 90%;
-  color: #FFFF00;
+  float: left;
+  top: 0%;
+  border-radius: 25px;
+  line-height: middle;
+
+  transition: background-color 2s ease;
+  background-color: transparent;
+}
+
+#first:hover{
+/*  opacity: .4;
+  filter: alpha(opacity=40);  For IE8 and earlier */
+  transition: background-color 2s ease;
+  background: #6E6E6E;
+}
+
+
+#second {
+  font-size: 35px;
+  z-index: 5;
+  width: 24.5%;
+  min-width: 149px;
+  height: 100px;
+  top: 0%;
+  background-color: transparent;
+  float: left;
+  border-radius: 25px;
+
+  transition: background-color 2s ease;
+  background-color: transparent;
+
+}
+
+#second:hover{
+ /* opacity: .4;
+  filter: alpha(opacity=40);  For IE8 and earlier */
+  transition: background-color 2s ease;
+  background: #6E6E6E;
+}
+
+#third {
+  font-size: 35px;
+  width: 24.5%;
+  min-width: 149px;
+  height: 100px;
+  background-color: transparent;
+  float: left;
+  top: 0%;
+  border-radius: 25px;
+
+  transition: background-color 2s ease;
+  background-color: transparent;
+}
+
+#third:hover{
+/*  opacity: .4;
+  filter: alpha(opacity=40);  For IE8 and earlier */
+  transition: background-color 2s ease;
+  background: #6E6E6E;
+}
+
+#fourth {
+  font-size: 35px;
+  width: 24.5%;
+  min-width: 149px;
+  height: 100px;
+  background-color: transparent;
+  float: left;
+  top: 0%;
+  border-radius: 25px;
+
+  transition: background-color 2s ease;
+  background-color: transparent;
+}
+
+#fourth:hover{
+/*  opacity: .4;
+  filter: alpha(opacity=40);  For IE8 and earlier */
+  transition: background-color 2s ease;
+  background: #6E6E6E;
+}
+
+#fifth {
+  font-size: 35px;
+  width: 25%;
+  min-width: 150px;
+  height: 100px;
+  background-color: transparent;
+  float: left;
+  top: 0%;
+  border-radius: 25px;
+
+  transition: background-color 2s ease;
+  background-color: transparent;
+}
+
+#fifth:hover{
+/*  opacity: .4;
+  filter: alpha(opacity=40);  For IE8 and earlier */
+  transition: background-color 2s ease;
+  background: #6E6E6E;
+}
+
+#sixth {
+  font-size: 35px;
+  width: 25%;
+  min-width: 150px;
+  height: 100px;
+  background-color: transparent;
+  float: left;
+  top: 0%;
+  border-radius: 25px;
+
+  transition: background-color 2s ease;
+  background-color: transparent;
+}
+
+#sixth:hover{
+/*  opacity: .4;
+  filter: alpha(opacity=40);  For IE8 and earlier */
+  transition: background-color 2s ease;
+  background: #6E6E6E;
+}
+
+#seventh {
+  font-size: 35px;
+  width: 25%;
+  min-width: 150px;
+  height: 100px;
+  background-color: transparent;
+  float: left;
+  top: 0%;
+  border-radius: 25px;
+
+  transition: background-color 2s ease;
+  background-color: transparent;
+}
+
+#seventh:hover{
+/*  opacity: .4;
+  filter: alpha(opacity=40);  For IE8 and earlier */
+  transition: background-color 2s ease;
+  background: #6E6E6E;
+}
+
+#eigth {
+  font-size: 35px;
+  width: 25%;
+  min-width: 150px;
+  height: 100px;
+  background-color: transparent;
+  float: left;
+  top: 0%;
+  border-radius: 25px;
+
+  transition: background-color 2s ease;
+  background-color: transparent;
+}
+
+#eigth:hover{
+/*  opacity: .4;
+  filter: alpha(opacity=40);  For IE8 and earlier */
+  transition: background-color 2s ease;
+  background: #6E6E6E;
+}
+
+#infoBox {
+  position: absolute;
+  color: white;
+  background-color: #A4A4A4;
+  font-size: 25px;
   font-weight: bold;
-  font-size: 22px; 
-  overflow: auto;
-  padding: 10;
-  font: 25px/1.7 "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
-
-  -webkit-animation: bounceInUp 1500ms ease-out;
-  -moz-animation: bounceInUp 1500ms ease-out;
-  -o-animation: bounceInUp 1500ms ease-out;
-  animation: bounceInUp 1500ms ease-out;
-
-}
-
-hr {
-  background-color: blue;
-  border: 5px;
-  border-top: 5px solid #eee;
-
-  -webkit-animation: mymove 5s infinite;*/ /* Chrome, Safari, Opera */
-/*  animation: mymove 5s infinite;
-}
-
-ul.nav a:hover {
- color: #0000FF !important; 
-}
-
-a:hover {
-  color: #0000FF !important;
-}
-
-@-webkit-keyframes bounceInUp {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
-            transform: translate3d(0, 3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-            transform: translate3d(0, -20px, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(0, 10px, 0);
-            transform: translate3d(0, 10px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-            transform: translate3d(0, -5px, 0);
-  }
-
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounceInUp {
-  0%, 60%, 75%, 90%, 100% {
-    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 3000px, 0);
-            transform: translate3d(0, 3000px, 0);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, -20px, 0);
-            transform: translate3d(0, -20px, 0);
-  }
-
-  75% {
-    -webkit-transform: translate3d(0, 10px, 0);
-            transform: translate3d(0, 10px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-            transform: translate3d(0, -5px, 0);
-  }
-
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
+  left: 10%;
+  width: 75%;
+  min-width: 500px;
+  text-align: center;
+  bottom: 50%;
+  z-index: 5;
+  margin: 0 auto;
+  bottom: 50%;
+  font-family: 'Roboto', sans-serif;
 }
 
 
-
-.bounceInUp {
-  -webkit-animation-name: bounceInUp;
-          animation-name: bounceInUp;
-}
-
-*/
-/* Chrome, Safari, Opera */
-/*
-@-webkit-keyframes mymove {
-    50% {border-color: #0000FF;}
-}
-*/
-/* Standard syntax */
-/*
-@keyframes mymove {
-    50% {border-color: #0000FF;}
-}*/
